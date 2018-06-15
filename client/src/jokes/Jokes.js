@@ -30,7 +30,11 @@ class Jokes extends Component {
     render() { 
         return ( 
             <ul className='jokes'>
-                {this.state.jokes.map(joke => <li className='joke' key={joke._id}>{joke}</li>)}
+                {this.state.jokes.map(joke => 
+                    <li className='joke' key={joke.id}>
+                        {joke.setup} 
+                        {joke.punchline}
+                    </li>)}
             </ul>
         )
     }
