@@ -12,7 +12,8 @@ Middleware is code that's used to perform specific functions and be passed in to
   resave: true,
   saveUninitialized: false,
   name: 'noname',
-};```
+};
+```
 
 Express Sessions are used to persist data across multiple requests made by the user, which is usually stored in cookies. Each user has a unique session.
 
